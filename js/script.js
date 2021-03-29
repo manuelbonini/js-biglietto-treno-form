@@ -1,4 +1,4 @@
-// bottone "genera"
+// BOTTONE "GENERA"
 var generateButton = document.getElementById('generate-button');
 generateButton.addEventListener('click', function() {
     // operazioni ceh svolge dopo il click
@@ -27,14 +27,14 @@ generateButton.addEventListener('click', function() {
     }
 
 
-    // carrozza
+    // Numero carrozza
     var numeroCarrozza = getRandomNumber(1, 10);
 
-    // codice CP
+    // Codice CP
     var codiceCp = getRandomNumber(90000, 100000);
     // console.log(codiceCp);
 
-    // stampzre a schermo i dati 
+    // Stampare a schermo i dati 
     document.getElementById('result-user-name').innerHTML = userName;
     document.getElementById('result-offer').innerHTML = userOffer;
     document.getElementById('result-code').innerHTML = codiceCp;
@@ -49,3 +49,13 @@ function getRandomNumber(min, max) {
     var randomNumber = Math.floor(Math.random() * (max - min) ) + min;
     return randomNumber;
 }
+
+// BOTTONE "ANNULLA"
+var cancelButton = document.getElementById('cancel-button');
+cancelButton.addEventListener('click', function() {
+
+    document.getElementById('input-user-name').value = '';
+    document.getElementById('input-user-km').value = '';
+    document.getElementById('input-user-age').value = 'maggiorenne';
+
+});

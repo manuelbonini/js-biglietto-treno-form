@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="ticket-generator">
+        <label for="input-user-name">Nome Cognome</label>
+        <input id="input-user-name" type="text" placeholder="Inserisci il nome">
+
+        <label for="input-user-km">Km da percorrere</label>
+        <input id="input-user-km" type="number" placeholder="Inserisci i km">
+
+        <label for="input-user-age">Fascia d'età</label>
+        <select id="input-user-age">
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="under">Minorenne</option>
+            <option value="over">Over 65</option>
+        </select>
+
+        <button id="generate-button">Genera</button>
+        <button id="cancel-button">Annulla</button>
+    </div>
+
+    <div>
+        <div>Nome passeggero: <span id="result-user-name"></span></div>
+        <div>Offerta: <span id="result-offer"></span></div>
+        <div>Carrozza: <span id="result-trailer"></span></div>
+        <div>Codice CP: <span id="result-code"></span></div>
+        <div>Prezzo: <span id="result-price"></span></div>
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
